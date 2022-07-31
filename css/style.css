@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 18px;
+  font-family: "Kumbh Sans", sans-serif;
+  color: hsl(229deg, 23%, 23%);
+}
+
+body {
+  background: url("../images/bg-pattern-top.svg") no-repeat -150px -300px, url("../images/bg-pattern-bottom.svg") no-repeat 150px 400px, hsl(185deg, 75%, 39%);
+  background-size: 400px 500px;
+}
+
+.container {
+  width: 315px;
+  margin: 140px auto;
+}
+.container .card {
+  background-color: #fff;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 15px;
+}
+.container .card .img img {
+  display: block;
+  width: 100%;
+}
+.container .card .profile img {
+  border-radius: 100%;
+  margin-top: -50px;
+  border: 6px solid #fff;
+}
+.container .card .profile .name {
+  font-weight: 700;
+  padding: 20px 0 10px;
+}
+.container .card .profile .name .age {
+  padding-left: 10px;
+  font-weight: 400;
+  color: hsl(227deg, 10%, 46%);
+}
+.container .card .profile .city {
+  font-size: 0.8em;
+  color: hsl(227deg, 10%, 46%);
+  padding: 0px 0 20px;
+}
+.container .card hr {
+  color: hsl(0deg, 0%, 59%);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+.container .card .social {
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.container .card .social .box .number {
+  font-weight: 700;
+}
+.container .card .social .box .title {
+  color: hsl(0deg, 0%, 59%);
+  font-size: 0.6em;
+  letter-spacing: 1px;
+}
+
+.attribution {
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+@media (min-width: 376px) {
+  body {
+    background-size: 100% 500px;
+  }
+}
+@media (min-width: 1044px) {
+  body {
+    background: url("../images/bg-pattern-top.svg") no-repeat -150px -300px, url("../images/bg-pattern-bottom.svg") no-repeat 600px 400px, hsl(185deg, 75%, 39%);
+    background-size: 60%;
+  }
+}/*# sourceMappingURL=style.css.map */

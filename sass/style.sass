@@ -1,0 +1,79 @@
+$Mobile: 375px
+$Desktop: 1044px
+$Dark-cyan: hsl(185, 75%, 39%)
+$Very-dark-desaturated-blue: hsl(229, 23%, 23%)
+$Dark-grayish-blue: hsl(227, 10%, 46%)
+$Dark-gray: hsl(0, 0%, 59%)
+$Withe: #fff
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap')
+
+*   
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-size: 18px
+    font-family: 'Kumbh Sans', sans-serif
+    color: $Very-dark-desaturated-blue
+
+body
+    background: url("../images/bg-pattern-top.svg") no-repeat  -150px -300px, url("../images/bg-pattern-bottom.svg") no-repeat  150px 400px, $Dark-cyan
+    background-size: 400px 500px
+
+.container
+    width: $Mobile - 60px
+    margin: 140px auto
+    .card
+        background-color: $Withe
+        overflow: hidden
+        text-align: center
+        border-radius: 15px
+        .img
+            img
+                display: block
+                width: 100%
+        .profile
+            img
+                border-radius: 100%
+                margin-top: -50px
+                border: 6px solid $Withe
+            .name
+                font-weight: 700
+                padding: 20px 0 10px  
+                .age
+                    padding-left: 10px
+                    font-weight: 400
+                    color: $Dark-grayish-blue
+            .city
+                font-size: 0.8em
+                color: $Dark-grayish-blue
+                padding: 0px 0 20px
+        hr
+            color: $Dark-gray
+            border-top: 0
+            border-left: 0
+            border-right: 0
+        .social
+            padding: 20px 0
+            display: flex
+            justify-content: space-evenly
+            .box
+                .number
+                    font-weight: 700
+                .title
+                    color: $Dark-gray
+                    font-size: 0.6em
+                    letter-spacing: 1px
+            
+.attribution 
+    text-align: center
+    a 
+        color: hsl(228, 45%, 44%)
+
+@media (min-width: $Mobile + 1)
+    body
+        background-size: 100% 500px
+@media (min-width: $Desktop)
+    body
+        background: url("../images/bg-pattern-top.svg") no-repeat  -150px -300px, url("../images/bg-pattern-bottom.svg") no-repeat  600px 400px, $Dark-cyan
+        background-size: 60% 
